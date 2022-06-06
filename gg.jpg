@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: green;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.cont {
+  position: relative;
+  display: inline-block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100px;
+}
+
+.submenu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu a:hover {
+  background-color: gray
+}
+
+.cont:hover .submenu {
+  display: block;
+}
+
+.cont:hover .button {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<h2>Dropdown Menu</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="cont">
+  <button class="button">Dropdown</button>
+  <div class="submenu">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+
+<p><strong>Note:</strong> We use href="#" for test links. In a real web site this would be URLs.</p>
+
+</body>
+</html>
+
+
